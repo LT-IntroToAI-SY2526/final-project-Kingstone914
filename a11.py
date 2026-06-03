@@ -471,9 +471,6 @@ Action = Callable[[List[str]], List[Any]]
 # The pattern-action list for the natural language query system. It must be declared
 # here, after all of the function definitions
 pa_list: List[Tuple[Pattern, Action]] = [
-    ("when was % born".split(), birth_date),
-    ("when did % die".split(), death_date),
-    ("what is the polar radius of %".split(), polar_radius),
     ("who is the producer of %".split(), pokemon_producers),
     ("who is the composer of %".split(), pokemon_composers),
     ("who is the designer of %".split(), pokemon_designers),
